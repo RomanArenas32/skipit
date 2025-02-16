@@ -2,20 +2,74 @@
 @tailwind components;
 @tailwind utilities;
 
-:root {
-  --background: #ffffff;
-  --foreground: #171717;
+body {
+  font-family: Arial, Helvetica, sans-serif;
 }
 
-@media (prefers-color-scheme: dark) {
+@layer base {
   :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
+    --background: 0 0% 100%;
+    --foreground: 240 10% 3.9%;
+    --card: 0 0% 100%;
+    --card-foreground: 240 10% 3.9%;
+    --popover: 0 0% 100%;
+    --popover-foreground: 240 10% 3.9%;
+    --primary: 234 100% 67%;
+    --primary-foreground: 0 0% 98%;
+    --secondary: 240 4.8% 95.9%;
+    --secondary-foreground: 234 100% 67%;
+    --muted: 240 4.8% 95.9%;
+    --muted-foreground: 240 3.8% 46.1%;
+    --accent: 240 4.8% 95.9%;
+    --accent-foreground: 234 100% 67%;
+    --destructive: 0 84.2% 60.2%;
+    --destructive-foreground: 0 0% 98%;
+    --border: 214 32% 91%;
+    --input: 240 5.9% 90%;
+    --ring: 240 10% 3.9%;
+    --chart-1: 158 64% 52%;
+    --chart-2: 234 100% 67%;
+    --chart-3: 48 96% 53%;
+    --chart-4: 133 100% 78%;
+    --chart-5: 206 100% 77%;
+    --chart-6: 282 78% 75%;
+    --chart-7: 5 100% 85%;
+    --chart-8: 168 76% 70%;
+    --chart-9: 28 95% 76%;
+    --chart-10: 180 67% 52%;
+    --radius: 0.5rem;
+    --sidebar-background: 0 0% 100%;
+    --sidebar-foreground: 215 16% 47%;
+    --sidebar-primary: 234 100% 67%;
+    --sidebar-primary-foreground: 0 0% 98%;
+    --sidebar-accent: 210 40% 98%;
+    --sidebar-accent-foreground: 234 100% 67%;
+    --sidebar-border: 214 32% 91%;
+    --sidebar-ring: 217.2 91.2% 59.8%;
   }
 }
 
-body {
-  color: var(--foreground);
-  background: var(--background);
-  font-family: Arial, Helvetica, sans-serif;
+@layer base {
+  * {
+    @apply border-border font-montreal;
+  }
+  
+  body {
+    @apply bg-background text-foreground;
+  }
 }
+
+@layer utilities {
+  .linear-bg-gradient {
+    opacity: 0.08;
+    background: linear-gradient(to bottom, #FFFDC9, #1847D7);
+  }
+  .linear-button-gradient {
+    background: linear-gradient(92deg, #1847D7, #D67FFF);
+  }
+}
+
+
+
+
+
