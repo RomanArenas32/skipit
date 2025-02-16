@@ -1,5 +1,5 @@
-
 import { cn } from "@/lib/utils"
+import "animate.css"
 
 interface Step {
   number: number
@@ -36,12 +36,12 @@ const steps: Step[] = [
 
 export const RoadmapHome = () => {
   return (
-    <div className="relative flex min-h-screen flex-col items-center justify-center bg-[#0a0b1e] px-4 py-20">
+    <div className="relative flex min-h-screen flex-col items-center justify-center bg-[#0a0b1e] px-4 py-20 animate__animated animate__fadeIn">
       <div className="container max-w-4xl text-center">
-        <h2 className="mb-4 text-4xl font-bold text-[#ffd700] sm:text-5xl">
+        <h2 className="mb-4 text-4xl font-bold text-[#ffd700] sm:text-5xl animate__animated animate__fadeInDown">
           How It Works: Our Process
         </h2>
-        <p className="mb-16 text-gray-400">
+        <p className="mb-16 text-gray-400 animate__animated animate__fadeInDown animate__delay-1s">
           A Proven Framework for Transforming Your Business with Custom AI Agent Solutions.
         </p>
 
@@ -55,8 +55,10 @@ export const RoadmapHome = () => {
               <div
                 key={step.number}
                 className={cn(
-                  "relative flex gap-8",
-                  index % 2 === 0 ? "flex-row text-right" : "flex-row-reverse text-left"
+                  "relative flex gap-8 animate__animated",
+                  index % 2 === 0
+                    ? "flex-row text-right animate__fadeInLeft animate__delay-2s"
+                    : "flex-row-reverse text-left animate__fadeInRight animate__delay-2s"
                 )}
               >
                 {/* Content */}
