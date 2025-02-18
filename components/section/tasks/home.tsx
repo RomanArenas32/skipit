@@ -5,27 +5,27 @@ export const TasksHome = () => {
   const benefits = [
     {
       icon: <RefreshCw className="w-8 h-8 text-yellow-400" />,
-      title: "Boost Efficiency",
+      title: "Aumenta la Eficiencia",
       description:
-        "Outsource even the most complex in your business. Not just drafting emails.",
+        "Externaliza incluso las tareas más complejas de tu negocio, mucho más que solo redactar correos.",
     },
     {
       icon: <Cog className="w-8 h-8 text-violet-400" />,
-      title: "Reduce Mistakes",
+      title: "Reduce Errores",
       description:
-        "Once your agents are fine tuned, they require minimal to no supervision",
+        "Una vez optimizados, tus procesos requieren mínima o ninguna supervisión.",
     },
     {
       icon: <Brain className="w-8 h-8 text-orange-400" />,
-      title: "Stay Ahead",
+      title: "Mantente a la Vanguardia",
       description:
-        "Adapt quickly to new advancements in AI with OpenAI Assistants API",
+        "Adáptate rápidamente a los avances más recientes en IA con la API de Asistentes de OpenAI.",
     },
     {
       icon: <BarChart3 className="w-8 h-8 text-green-400" />,
-      title: "Scale Seamlessly",
+      title: "Escala sin Esfuerzo",
       description:
-        "Add more agents as needed. Scale without affecting your overhead.",
+        "Añade más agentes según sea necesario. Expande sin aumentar tus costos operativos.",
     },
   ]
 
@@ -35,17 +35,15 @@ export const TasksHome = () => {
         {/* Sección de encabezado */}
         <div className="text-center mb-16">
           <p className="text-sm uppercase tracking-wider mb-4 animate__animated animate__fadeInDown">
-            OUR BENEFITS
+            TUS BENEFICIOS
           </p>
           <h2 className="text-4xl md:text-5xl font-bold text-yellow-400 mb-6 animate__animated animate__fadeInDown animate__delay-1s">
-            Automate Roles, Not
+            Automatizar funciones
             <br />
-            Just Tasks
+            No solo procesos
           </h2>
           <p className="max-w-2xl mx-auto text-gray-300 animate__animated animate__fadeInUp animate__delay-2s">
-            Unlock unprecedented growth by integrating AI Agents into your operations.
-            Experience the transformative benefits:
-          </p>
+          Impulsa un crecimiento sin precedentes con soluciones de IA autónomas y avanzadas          </p>
         </div>
 
         {/* Tarjetas de beneficios */}
@@ -60,7 +58,7 @@ export const TasksHome = () => {
               >
                 <CardHeader>
                   <div className="mb-4">{benefit.icon}</div>
-                  <CardTitle className="text-xl mb-2">{benefit.title}</CardTitle>
+                  <CardTitle className="text-2xl mb-2 text-white font-bold">{benefit.title}</CardTitle>
                 </CardHeader>
                 <CardContent>
                   <p className="text-gray-400 text-sm mb-6">{benefit.description}</p>

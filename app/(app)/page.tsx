@@ -29,9 +29,10 @@ export default function Home() {
       <AnimateOnScroll animation="animate__fadeInUp">
         <PosterHome />
       </AnimateOnScroll>
+      {/* 
       <AnimateOnScroll animation="animate__fadeInUp">
         <ReferencesHome />
-      </AnimateOnScroll>
+      </AnimateOnScroll>*/}
       <AnimateOnScroll animation="animate__fadeInUp">
         <QuestionsHome />
       </AnimateOnScroll>

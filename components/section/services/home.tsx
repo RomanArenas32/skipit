@@ -8,11 +8,10 @@ export function ServicesHome() {
         <div className="grid gap-8 md:grid-cols-2 items-center">
           <div className="space-y-4">
             <h1 className="text-4xl md:text-6xl font-bold">
-              <span className="text-[#FFD700]">AGENTS</span>
+              <span className="text-[#FFD700]">SERVICIO</span>
               <br />
-              <span className="text-white">-AS-A-</span>
-              <br />
-              <span className="text-white">SERVICE</span>
+
+              <span className="text-white">PERSONALIZADO</span>
             </h1>
           </div>
           <div className="relative">
@@ -20,7 +19,7 @@ export function ServicesHome() {
             <Card className="bg-[#2a1f63]/50 border-none">
               <CardContent className="p-6">
                 <div className="w-12 h-12 bg-[#FFD700] rounded-full mb-4"></div>
-                <p className="text-gray-300">Empowering businesses with intelligent automation solutions</p>
+                <p className="text-gray-300">Empoderando a las empresas con soluciones de automatización</p>
               </CardContent>
             </Card>
           </div>
@@ -30,13 +29,12 @@ export function ServicesHome() {
       {/* Team Section */}
       <div className="max-w-6xl mx-auto text-center mb-20">
         <h2 className="text-3xl md:text-4xl font-bold mb-6">
-          <span className="text-[#FFD700]">Your Dedicated AI</span>
+          <span className="text-[#FFD700]">Somos un equipo de consultoria</span>
           <br />
-          <span className="text-white">Development Team</span>
+          <span className="text-white">impulsado por la innovacion en IA y las tecnologias mas avanzadas</span>
         </h2>
         <p className="text-gray-300 max-w-2xl mx-auto">
-          We are a small team of AI developers. Our team is leading one of the most popular AI Agent Development
-          Frameworks called Agency Swarm.
+          Compartenos tus ideas y nosotros las convertiremos en realidad.
         </p>
       </div>
 
@@ -46,18 +44,18 @@ export function ServicesHome() {
           {[
             {
               number: "10k+",
-              label: "HOURS SAVED",
-              description: "We saved thousands of employee hours.",
+              label: "HORAS AHORRADAS",
+              description: "Ahorramos miles de horas de trabajo para tus empleados.",
             },
             {
               number: "50+",
-              label: "BUSINESSES AUTOMATED",
-              description: "We work with businesses of all sizes.",
+              label: "CLIENTES SATISFECHOS",
+              description: "Trabajamos con empresas de todas los tamanios.",
             },
             {
               number: "2.5k+",
-              label: "STARS ON GITHUB",
-              description: "We only use our own framework.",
+              label: "INTEGRACIONES",
+              description: "Soluciones completas e integradas.",
             },
           ].map((stat, index) => (
             <Card key={index} className="bg-[#2a1f63]/50 border-none">

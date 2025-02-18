@@ -10,15 +10,13 @@ export const HomeSection = () => {
         <div className="grid lg:grid-cols-2 gap-12 items-center">
           <div className="space-y-6">
             <p className="text-sm text-gray-400 tracking-wider animate__animated animate__fadeInDown">
-              Servicio al medida
+              Servicios a medida
             </p>
-            <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold text-white leading-tight animate__animated animate__fadeInLeft">
-              Reorganize su negocio{' '}
-              <span className="text-[#FFD700] block mt-2">Equipo IT</span>
+            <h1 className="text-4xl md:text-xl lg:text-6xl font-bold text-white leading-tight animate__animated animate__fadeInLeft">
+              Escala tu negocio con <span className='text-[#FFD700]'>IA</span> 
+              <span className="text-[#FFD700] block mt-2 text-4xl">Soluciones inteligentes para potenciar tus finanzas
+              </span>
             </h1>
-            <p className="text-gray-300 text-lg animate__animated animate__fadeInUp">
-              Automatizacion de procesos a bajo costo.
-            </p>
             <div className="flex flex-wrap gap-4 pt-4">
               <Button
                 size="lg"
@@ -39,7 +37,7 @@ export const HomeSection = () => {
           </div>
           <div className="relative h-[400px] lg:h-[600px]">
             <Image
-              src="https://media.giphy.com/media/3o7aD6xVh0z32MoMBy/giphy.gif" // URL de una imagen animada (gif)
+              src="https://media.giphy.com/media/QpVUMRUJGokfqXyfa1/giphy.gif" // Nueva imagen animada
               alt="Imagen animada"
               fill
               className="object-contain animate__animated animate__zoomIn"

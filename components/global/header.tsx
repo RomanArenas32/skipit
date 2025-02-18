@@ -31,8 +31,8 @@ export const Header = () => {
           </Link>
 
        
-          <Button size="sm" className="bg-yellow-600 text-primary-foreground hover:bg-yellow-800 font-bold">
-            Comencemos!
+          <Button size="sm" className="bg-[#FFD700] text-lg hover:bg-yellow-800 font-bold">
+            CONSULTE
           </Button>
         </div>
       </div>
